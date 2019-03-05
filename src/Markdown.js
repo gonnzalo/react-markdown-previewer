@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Previewer from "./Previewer";
 import styles from "./Markdown.module.css";
+import MarkExample from "./MarkExample";
 
 class Markdown extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      value: ""
+      value: MarkExample
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -20,7 +21,7 @@ class Markdown extends Component {
   render() {
     const { value } = this.state;
     return (
-      <div className="markdonBody">
+      <div>
         <header>
           <h1 className={styles.title}>Markdown Previewer</h1>
         </header>
