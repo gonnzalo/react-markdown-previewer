@@ -1,0 +1,6 @@
+.previewer {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: scroll;
+  max-height: 90vh;
+}

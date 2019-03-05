@@ -1,0 +1,61 @@
+.markContainer {
+  display: flex;
+}
+
+.markInput {
+  width: 50%;
+  height: calc(100vh - 115px);
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 400;
+  outline-color: #344055;
+  resize: none;
+  overflow-y: scroll;
+}
+
+.markOutput {
+  width: 50%;
+}
+
+.description {
+  display: flex;
+  border: 1px solid #eee;
+}
+
+.descripInput {
+  width: 50%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+}
+.descripOutput {
+  width: 50%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: rgb(102, 102, 102);
+}
+
+header {
+  background-color: #344055;
+}
+
+.title {
+  margin: 0;
+  padding: 0.8rem;
+  margin-left: 4rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
