@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
 function Header(props) {
-  const { handleClick } = props;
+  const { handleClick, mobilePreview } = props;
   return (
     <div className={styles.headerContainer}>
       <header>
@@ -16,7 +16,8 @@ function Header(props) {
       <div className={styles.buttonMobile}>
         <button
           type="button"
-          className={styles.btnsMobile}
+          className={`${styles.btnsMobile}  ${mobilePreview === "markdown" &&
+            styles.btnsMobileActive}`}
           onClick={handleClick}
           value="markdown"
         >
@@ -24,7 +25,8 @@ function Header(props) {
         </button>
         <button
           type="button"
-          className={styles.btnsMobile}
+          className={`${styles.btnsMobile}  ${mobilePreview === "preview" &&
+            styles.btnsMobileActive}`}
           onClick={handleClick}
           value="preview"
         >

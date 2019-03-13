@@ -30,7 +30,7 @@ class App extends Component {
     const { value, mobilePreview } = this.state;
     return (
       <div className="App">
-        <Header handleClick={this.handleClick} />
+        <Header handleClick={this.handleClick} mobilePreview={mobilePreview} />
         <div className="Container">
           <Markdown
             value={value}

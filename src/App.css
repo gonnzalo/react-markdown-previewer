@@ -2,3 +2,9 @@
   display: flex;
   height: calc(100vh - 118px);
 }
+
+@media all and (max-width: 768px) {
+  .Container {
+    height: 90vh;
+  }
+}

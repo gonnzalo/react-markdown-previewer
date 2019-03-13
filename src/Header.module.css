@@ -48,11 +48,17 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  border: 1px solid rgb(49, 56, 78);
+  border: 4px solid #3a4e6e;
   font-weight: 500;
   letter-spacing: 2px;
-  background-color: #407e86;
-  color: #eee;
+  background-color: #3a4e6e;
+  color: #fff;
+  outline: none;
+}
+
+.btnsMobileActive {
+  border: 4px solid rgb(206, 47, 47);
+  color: rgb(221, 221, 24);
 }
 
 @media all and (max-width: 768px) {
@@ -62,5 +68,12 @@ header {
 
   .buttonMobile {
     display: block;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.6rem;
+    font-weight: 600;
   }
 }
