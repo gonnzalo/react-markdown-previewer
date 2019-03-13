@@ -35,3 +35,32 @@ header {
   font-size: 1.5rem;
   letter-spacing: 3px;
 }
+
+.buttonMobile {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btnsMobile {
+  width: 50%;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid rgb(49, 56, 78);
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: #407e86;
+  color: #eee;
+}
+
+@media all and (max-width: 768px) {
+  .description {
+    display: none;
+  }
+
+  .buttonMobile {
+    display: block;
+  }
+}

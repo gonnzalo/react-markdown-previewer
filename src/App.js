@@ -10,24 +10,34 @@ class App extends Component {
     super(props);
 
     this.state = {
-      value: MarkExample
+      value: MarkExample,
+      mobilePreview: "markdown"
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
 
+  handleClick(event) {
+    this.setState({ mobilePreview: event.target.value });
+  }
+
   render() {
-    const { value } = this.state;
+    const { value, mobilePreview } = this.state;
     return (
       <div className="App">
-        <Header />
+        <Header handleClick={this.handleClick} />
         <div className="Container">
-          <Markdown value={value} handleChange={this.handleChange} />
-          <Previewer value={value} />
+          <Markdown
+            value={value}
+            handleChange={this.handleChange}
+            mobilePreview={mobilePreview}
+          />
+          <Previewer value={value} mobilePreview={mobilePreview} />
         </div>
       </div>
     );

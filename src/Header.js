@@ -1,9 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./Header.module.css";
 
-function Header() {
+function Header(props) {
+  const { handleClick } = props;
   return (
-    <div>
+    <div className={styles.headerContainer}>
       <header>
         <h1 className={styles.title}>Markdown Previewer</h1>
       </header>
@@ -11,8 +13,30 @@ function Header() {
         <h3 className={styles.descripInput}>Markdown</h3>
         <h3 className={styles.descripOutput}>Preview</h3>
       </div>
+      <div className={styles.buttonMobile}>
+        <button
+          type="button"
+          className={styles.btnsMobile}
+          onClick={handleClick}
+          value="markdown"
+        >
+          Markdown
+        </button>
+        <button
+          type="button"
+          className={styles.btnsMobile}
+          onClick={handleClick}
+          value="preview"
+        >
+          Preview
+        </button>
+      </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  handleClick: PropTypes.func.isRequired
+};
 
 export default Header;

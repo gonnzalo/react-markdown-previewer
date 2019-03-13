@@ -1,6 +1,24 @@
 .previewer {
   width: 50%;
+  max-height: 90vh;
   padding: 1rem;
   overflow-y: scroll;
+}
+
+.displayMobile {
+  width: 50%;
   max-height: 90vh;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+@media all and (max-width: 768px) {
+  .previewer {
+    display: none;
+  }
+
+  .displayMobile {
+    display: blocks;
+    width: 100%;
+  }
 }

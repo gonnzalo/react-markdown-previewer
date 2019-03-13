@@ -3,9 +3,15 @@ import PropTypes from "prop-types";
 import styles from "./Markdown.module.css";
 
 function Markdown(props) {
-  const { value, handleChange } = props;
+  const { value, handleChange, mobilePreview } = props;
   return (
-    <div className={styles.markContainer}>
+    <div
+      className={
+        mobilePreview === "markdown"
+          ? styles.displayMobile
+          : styles.markContainer
+      }
+    >
       <textarea
         value={value}
         onChange={handleChange}
@@ -17,7 +23,8 @@ function Markdown(props) {
 
 Markdown.propTypes = {
   value: PropTypes.string.isRequired,
-  handleChange: PropTypes.func.isRequired
+  handleChange: PropTypes.func.isRequired,
+  mobilePreview: PropTypes.string.isRequired
 };
 
 export default Markdown;

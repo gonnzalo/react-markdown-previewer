@@ -17,3 +17,19 @@
   resize: none;
   overflow-y: scroll;
 }
+
+.displayMobile {
+  width: 50%;
+}
+
+@media all and (max-width: 768px) {
+  .markContainer {
+    display: none;
+  }
+
+  .displayMobile {
+    display: blocks;
+    width: 100%;
+    height: 100%;
+  }
+}
