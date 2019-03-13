@@ -38,7 +38,8 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
+  mobilePreview: PropTypes.string.isRequired
 };
 
 export default Header;
