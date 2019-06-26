@@ -2,7 +2,9 @@
 
 Markdown Previewer is a React single web app to write and preview markdown
 
-## Demo
+![ScreenShot](https://raw.github.com/gonnzalo/personal-website/master/src/images/markdown.png)
+
+## Live Demo
 
 [https://markdown-previewer.gonnzalo.now.sh/](https://markdown-previewer.gonnzalo.now.sh/)
 
